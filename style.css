@@ -1,0 +1,53 @@
+html,
+body {
+  height: 90%;
+  width: 99.8%;
+}
+
+body {
+  background-image: url(https://cdn.pling.com/img/8/0/9/f/b2efdc2ae0bd0c37ee37a1355ba145c6d4adf08dc7813a9dbff84ebe9e1f658aec73.png),
+    linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  background: #0b4d76;
+  color: #ffffff;
+  padding-top: 20px;
+  min-height: 70px;
+  border-bottom: #e8491d 4px solid;
+  font-family: "Akaya Telivigala";
+}
+header .highlight {
+  color: #e8491d;
+  font-weight: bold;
+}
+#totalamount {
+  padding: 4px;
+  height: 25px;
+  width: 180px;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+}
+
+.calculatorzone {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  text-align: left;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  max-width: 50%;
+  max-height: 50%;
+  padding: 20px 40px;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+}

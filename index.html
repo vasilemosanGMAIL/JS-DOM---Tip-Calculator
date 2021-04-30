@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" , initial-scale=1.0>
+	<meta name="http-equiv" content="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="JS DOM - Tip Calculator	">
+	<title>JS DOM - Tip Calculator </title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<div id="header">
+				<h1><span class="highlight"> 4) JS DOM -</span> Tip Calculator</h1>
+			</div>
+		</div>
+	</header>
+
+	<section id="calculatorzone" class="calculatorzone">
+		<div class="container">
+			<form>
+				<input type="number" id="totalamount" placeholder="Enter the total bill amount" min="0" max="10000">
+			</form>
+		</div>
+		<div class="container">
+			<p>Select the service level:</p>
+			<form id="radiobuttonform">
+				<input type="radio" id="outstanding" name="servicelevel" value="0.3">
+				<label for="outstanding">Outstanding - 30%</label><br>
+				<input type="radio" id="good" name="servicelevel" value="0.2">
+				<label for="good">Good - 20%</label><br>
+				<input type="radio" id="okish" name="servicelevel" value="0.15">
+				<label for="okish">OKish - 15%</label><br>
+				<input type="radio" id="bad" name="servicelevel" value="0.1">
+				<label for="bad">Bad - 10%</label><br>
+				<input type="radio" id="nevercomingback" name="servicelevel" value="0.05">
+				<label for="nevercomingback">Never coming back - 0%</label><br>
+			</form>
+		</div>
+		<div class="container">
+			<form>
+				<label for="numberofpersons">The number of persons that are splitting the bil</label>
+				<select name="numberofpersons" id="numberofpersons">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+				<br><br>
+				<input type="submit" id="calculate" value="Calculate">
+			</form>
+		</div>
+		<div class="container">
+			<p>
+			<p id="tip">Tip value for each person: </p>
+			</p>
+		</div>
+	</section>
+	<script src="app.js"></script>
+</body>
+
+</html>
